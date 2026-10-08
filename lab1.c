@@ -35,7 +35,7 @@ void* producer(void* arg){
             pthread_cond_signal(&condition);
         }
         pthread_mutex_unlock(&mutex);
-        sleep(2);
+        sleep(1);
     }
     return NULL;
 }
