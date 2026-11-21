@@ -1,0 +1,8 @@
+services:
+  worker: 
+    build: .
+    volumes: 
+      - shared-data:/data
+volumes:
+  shared-data:
+    external: true
